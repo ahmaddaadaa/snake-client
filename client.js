@@ -13,8 +13,11 @@ const connect = function() {
 
   conn.on("connect", () => {
     console.log("connection in established ");
+    conn.write("Name: ABC");
   });
   return conn;
+
+  
 };
 
 
