@@ -13,7 +13,7 @@ const connect = function() {
 
   conn.on("connect", () => {
     console.log("connection in established ");
-    conn.write("Name: ABC");
+    //conn.write("Move: up");
   });
   return conn;
 
