@@ -12,7 +12,7 @@ const connect = function() {
 
 
   conn.on("connect", () => {
-    console.log("connection in established ");
+    console.log("connection established ");
     //conn.write("Move: up");
   });
   return conn;
