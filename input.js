@@ -22,7 +22,7 @@ const setupInput = function (conn) {
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
   stdin.resume();
-
+  connection.write("say: Hi");
   stdin.on("data", handleUserInput);
   
   connection = conn; // Assign the connection to the global variable
